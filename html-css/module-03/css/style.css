@@ -1,0 +1,144 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 900px;
+  margin: 0px auto;
+}
+
+.visuallyhidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  color: #626262;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/* Site navigation */
+.page-nav {
+  padding: 70px 0px 95px 0px;
+}
+
+.page-menu {
+  width: 900px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.page-menu li {
+  display: inline-block;
+}
+
+.page-menu li:not(:last-child) {
+  margin-right: 100px;
+}
+
+.page-menu a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #626262;
+}
+
+.page-menu a:hover,
+.page-menu a:focus {
+  color: #03a9f4;
+}
+
+/* Sections */
+.section-content {
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.article-item {
+  font-size: 14px;
+  display: inline-block;
+  width: 420px;
+  height: 532px;
+  text-align: left;
+}
+
+.article-item img {
+  margin-bottom: 30px;
+}
+
+.article-item:nth-of-type(2n + 1) {
+  margin-right: 60px;
+}
+
+.article-item:not(:nth-last-of-type(-n + 2)) {
+  margin-bottom: 78px;
+}
+
+.article-item h2 {
+  margin-bottom: 28px;
+}
+
+.name-section {
+  font-family: "Ubuntu", sans-serif;
+  color: #b4ad9e;
+  text-transform: uppercase;
+  line-height: 17px;
+  font-weight: 300;
+  margin-bottom: 23px;
+}
+
+.article-item h2 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+/* Button */
+.load-more {
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 24px;
+  color: #626262;
+  background-color: #ffffff;
+  font-family: "Playfair Display", serif;
+  border: 1px solid #626262;
+  padding: 18px 34px;
+  margin: 0 376px 70px 356px;
+}
+
+.load-more:hover,
+.load-more:focus {
+  color: #03a9f4;
+  border: 1px solid #03a9f4;
+}

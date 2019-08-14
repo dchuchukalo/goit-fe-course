@@ -1,3 +1,7 @@
+* {
+  outline: 2px solid red
+}
+
 html {
   box-sizing: border-box;
 }
@@ -53,7 +57,6 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: inline-block;
   text-align: center;
   vertical-align: middle;
   font-size: 0;
@@ -73,6 +76,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   color: #626262;
+  display: block;
 }
 
 .page-menu a:hover,

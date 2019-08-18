@@ -1,7 +1,3 @@
-/* * {
-  outline: 1px solid rebeccapurple;
-} */
-
 html {
   box-sizing: border-box;
 }
@@ -57,7 +53,7 @@ body {
 
 /* Site navigation */
 .page-nav {
-padding: 32px 0;
+  padding: 32px 0;
 }
 
 .page-nav a {
@@ -126,14 +122,14 @@ padding: 32px 0;
   font-family: "Roboto", sans-serif;
 }
 
-.section-title::after{
-display: block;
-width: 164px;
-height: 7px;
-background-color: #1abc9c;
-content: "";
-margin: 32px auto;
-margin-bottom: 0;
+.section-title::after {
+  display: block;
+  width: 164px;
+  height: 7px;
+  background-color: #1abc9c;
+  content: "";
+  margin: 32px auto;
+  margin-bottom: 0;
 }
 
 .section-title {
@@ -151,13 +147,17 @@ margin-bottom: 0;
 }
 
 .products-list-item:not(:nth-last-of-type(-n + 4)) {
-margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .products-list {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.products-list li:hover .product-hover {
+  background-color: #1abc9c;
 }
 
 .products-list-item a {
@@ -167,23 +167,42 @@ margin-bottom: 30px;
 .products-list-item p {
   font-size: 18px;
   margin: 0;
-  padding: 0;
   background-color: #323232;
   color: #ffffff;
+  height: 40px;
+  padding-top: 5px;
+}
+
+.product-name {
+  float: left;
+  width: 201px;
+  padding-left: 14px;
 }
 
 .product-price {
   opacity: 0.44;
+  float: right;
+  width: 54px;
+  text-align: center;
 }
 
 /* News list */
 .news h2 {
-  margin-top: 98px;
+  margin: 108px 0 80px 0;
 }
 
 .news-list {
   list-style: none;
   padding: 0;
+}
+
+.news-list-item {
+  width: 351px;
+  float: left;
+}
+
+.news-list-item:not(:last-child) {
+  margin-right: 29px;
 }
 
 .news-list-item p,
@@ -193,24 +212,46 @@ margin-bottom: 30px;
 }
 
 .news-list-item h3 {
+  margin-top: 12px;
+}
+
+.news-list-item h3::after {
+  display: block;
+  width: 136px;
+  height: 3px;
+  background-color: #1abc9c;
+  content: "";
+  margin: 10px 0 26px 0;
+}
+
+.news-list-item h3 {
   font-weight: 600;
   font-size: 18px;
 }
 
 .news-list-item p {
   font-size: 14px;
+  margin-bottom: 11px;
+}
+
+.news {
+  margin-bottom: 80px;
 }
 
 /* Load more */
 .read-more {
-cursor: pointer;
-font-weight: 300;
-font-size: 16px;
-line-height: 26px;
-color: #ffffff;
-background-color: #4ec6ab;
-border: none;
-border-radius: 3px;
-width: 160px;
-height: 50px;
+  cursor: pointer;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+  background-color: #4ec6ab;
+  border: none;
+  border-radius: 3px;
+  width: 160px;
+  height: 50px;
+}
+
+.read-more:hover {
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.39);
 }

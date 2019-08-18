@@ -157,7 +157,8 @@ body {
   padding: 0;
 }
 
-.products-list li:hover .product-hover {
+.products-list a:hover .product-hover,
+.products-list a:focus .product-hover{
   background-color: #1abc9c;
 }
 
@@ -254,6 +255,7 @@ body {
   height: 50px;
 }
 
-.read-more:hover {
+.read-more:hover,
+.read-more:focus {
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.39);
 }

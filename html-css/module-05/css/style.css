@@ -1,3 +1,7 @@
+* {
+  outline: 1px solid red;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -21,7 +25,7 @@ img {
 }
 
 .container {
-  width: 1111px;
+  width: 1110px;
   margin: 0px auto;
 }
 
@@ -54,10 +58,8 @@ body {
 /* Site navigation */
 .page-nav {
   padding: 32px 0;
-}
-
-.page-nav a {
-  float: left;
+  position: relative;
+  min-height: 92px;
 }
 
 .site-logo {
@@ -68,6 +70,10 @@ body {
   text-decoration: none;
   color: #555252;
   text-transform: uppercase;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .site-logo p {
@@ -81,7 +87,10 @@ body {
 }
 
 .site-navigation {
-  float: right;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
   list-style: none;
   margin: 0;
   padding: 0;
@@ -89,7 +98,6 @@ body {
   line-height: 11px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: 9px;
 }
 
 .site-navigation li {
@@ -110,8 +118,54 @@ body {
   color: #1abc9c;
 }
 
+/* Slider */
+.banner {
+  min-height: 600px;
+  background-image: 
+  linear-gradient(to top, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)),
+    url(/img/slide4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider-ctrl {
+  font-family: "pe-icon-7-stroke";
+  font-size: 100px;
+  line-height: 11px;
+  border: none;
+  background-color: rgb(78, 198, 171);
+  opacity: 0.651;
+  width: 104px;
+  height: 104px;
+  display: inline-block;
+  position: absolute;
+  top: 225px;
+}
+
+.slider-ctrl:hover {
+  opacity: 1;
+}
+
+.slider-ctrl-prev {
+  left: 0px;
+}
+
+.slider-ctrl-next {
+  right: 0px;
+}
+
+
+
+/* .slider-ctrl:hover {
+  opacity: 0.65;
+} */
 /* Featured products */
-.section-title,
+/* .section-title,
 .products {
   font-size: 48px;
   margin: 0;
@@ -184,10 +238,10 @@ body {
   float: right;
   width: 54px;
   text-align: center;
-}
+} */
 
 /* News list */
-.news h2 {
+/* .news h2 {
   margin: 108px 0 80px 0;
 }
 
@@ -236,10 +290,10 @@ body {
 
 .news {
   margin-bottom: 80px;
-}
+} */
 
 /* Load more */
-.read-more {
+/* .read-more {
   cursor: pointer;
   font-weight: 300;
   font-size: 16px;
@@ -255,3 +309,4 @@ body {
 .read-more:hover {
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.39);
 }
+*/

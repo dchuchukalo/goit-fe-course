@@ -7,14 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Homework 05</title>
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/pe-icon-7-stroke.css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:300,900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
     <header class="page-header">
-        <nav class="page-nav container clearfix">
+        <nav class="page-nav container">
             <a href="#" class="site-logo">
                 <p>mart</p>
             </a>
@@ -28,63 +29,71 @@
             </ul>
         </nav>
     </header>
-    <main class="main-content container">
+    <main class="main-content">
         <h1 class="visuallyhidden">Our shop</h1>
+        <div class="banner">
+            <div class="slider container">
+                <button class="slider-ctrl slider-ctrl-prev"></button>
+                <button class="slider-ctrl slider-ctrl-next"></button>
+            </div>
+        </div>
+
+        <!-- 
         <section class="products">
             <h2 class="section-title">featured products</h2>
             <ul class="products-list clearfix">
                 <li class="products-list-item">
                     <a href="#">
-                        <img src="img/woman-shoe.jpg" alt="Woman shoe" width="255px" height="282px">
+                        <img src="img/woman-shoe.jpg" alt="Woman shoe" width="255px" height="282px" />
                         <p class="product-name product-hover">blue tshirt</p>
                         <p class="product-price product-hover">&#36;26</p>
                     </a>
                 </li>
                 <li class="products-list-item">
                     <a href="#">
-                        <img src="img/brown-belt.jpg" alt="brown belt" width="255px" height="282px">
+                        <img src="img/brown-belt.jpg" alt="brown belt" width="255px" height="282px" />
                         <p class="product-name product-hover">woman shirt</p>
                         <p class="product-price product-hover">&#36;31</p>
                     </a>
                 </li>
                 <li class="products-list-item">
                     <a href="#">
-                        <img src="img/hat.jpg" alt="hat" width="255px" height="282px">
+                        <img src="img/hat.jpg" alt="hat" width="255px" height="282px" />
                         <p class="product-name product-hover">yellow tshirt</p>
                         <p class="product-price product-hover">&#36;21</p>
                     </a>
                 </li>
                 <li class="products-list-item">
                     <a href="#">
-                        <img src="img/purse.jpg" alt="purse" width="255px" height="282px">
+                        <img src="img/purse.jpg" alt="purse" width="255px" height="282px" />
                         <p class="product-name product-hover">cool lingerie</p>
                         <p class="product-price product-hover">&#36;56</p>
                     </a>
                 </li>
                 <li class="products-list-item">
                     <a href="#">
-                        <img src="img/handbag.jpg" alt="handbag" width="255px" height="282px">
+                        <img src="img/handbag.jpg" alt="handbag" width="255px" height="282px" />
                         <p class="product-name product-hover">blue tshirt</p>
                         <p class="product-price product-hover">&#36;26</p>
                     </a>
                 </li>
                 <li class="products-list-item">
                     <a href="#">
-                        <img src="img/black-belt.jpg" alt="black belt" width="255px" height="282px">
+                        <img src="img/black-belt.jpg" alt="black belt" width="255px" height="282px" />
                         <p class="product-name product-hover">woman shirt</p>
                         <p class="product-price product-hover">&#36;31</p>
                     </a>
                 </li>
                 <li class="products-list-item">
                     <a href="#" class="clearfix">
-                        <img src="img/man-shoes.jpg" alt="man shoes" width="255px" height="282px">
+                        <img src="img/man-shoes.jpg" alt="man shoes" width="255px" height="282px" />
                         <p class="product-name product-hover">yellow tshirt</p>
                         <p class="product-price product-hover">&#36;21</p>
                     </a>
                 </li>
                 <li class="products-list-item">
                     <a href="#">
-                        <img src="img/sunglasses.jpg" alt="sunglasses" width="255px" height="282px">
+                        <img src="img/sunglasses.jpg" alt="sunglasses" width="255px" height="282px" />
                         <p class="product-name product-hover">cool lingerie</p>
                         <p class="product-price product-hover">&#36;56</p>
                     </a>
@@ -96,36 +105,49 @@
             <ul class="news-list clearfix">
                 <li class="news-list-item">
                     <article>
-                        <img src="img/tablet.jpg" alt="tablet" width="350px" height="262px">
-                        <h3>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean </h3>
-                        <p>Nam nec tellus a odio tincidunt auc. Duis sed odio sit amet nibh vulputate cursus a sit amet
-                            mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt</p>
+                        <img src="img/tablet.jpg" alt="tablet" width="350px" height="262px" />
+                        <h3>
+                            Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
+                        </h3>
+                        <p>
+                            Nam nec tellus a odio tincidunt auc. Duis sed odio sit amet nibh
+                            vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+                            Nam nec tellus a odio tincidunt
+                        </p>
                         <button class="read-more">Read More</button>
                     </article>
                 </li>
                 <li class="news-list-item">
                     <article>
-                        <img src="img/womans.jpg" alt="womans" width="350px" height="262px">
-                        <h3>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean </h3>
-                        <p>Nam nec tellus a odio tincidunt auc. Duis sed odio sit amet nibh vulputate cursus a sit amet
-                            mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt</p>
+                        <img src="img/womans.jpg" alt="womans" width="350px" height="262px" />
+                        <h3>
+                            Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
+                        </h3>
+                        <p>
+                            Nam nec tellus a odio tincidunt auc. Duis sed odio sit amet nibh
+                            vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+                            Nam nec tellus a odio tincidunt
+                        </p>
                         <button class="read-more">Read More</button>
                     </article>
                 </li>
                 <li class="news-list-item">
                     <article>
-                        <img src="img/bus.jpg" alt="bus" width="350px" height="262px">
-                        <h3>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean </h3>
-                        <p>Nam nec tellus a odio tincidunt auc. Duis sed odio sit amet nibh vulputate cursus a sit amet
-                            mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt</p>
+                        <img src="img/bus.jpg" alt="bus" width="350px" height="262px" />
+                        <h3>
+                            Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
+                        </h3>
+                        <p>
+                            Nam nec tellus a odio tincidunt auc. Duis sed odio sit amet nibh
+                            vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+                            Nam nec tellus a odio tincidunt
+                        </p>
                         <button class="read-more">Read More</button>
                     </article>
                 </li>
             </ul>
-        </section>
-
+        </section> -->
     </main>
 </body>
-
 
 </html>

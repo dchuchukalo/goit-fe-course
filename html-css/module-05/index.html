@@ -14,8 +14,9 @@
 </head>
 
 <body>
-    <header class="page-header">
-        <nav class="page-nav container">
+    <!-- HEADER -->
+    <header class="page-header container">
+        <nav class="page-nav container-content">
             <a href="#" class="site-logo">
                 <p>mart</p>
             </a>
@@ -31,62 +32,106 @@
     </header>
     <main class="main-content">
         <h1 class="visuallyhidden">Our shop</h1>
+        <!-- BANNER -->
         <div class="banner">
-            <div class="slider container">
-                <button class="slider-ctrl slider-ctrl-prev"></button>
-                <button class="slider-ctrl slider-ctrl-next"></button>
+            <div class="container">
+                <div class="slider container-content">
+                    <button class="slider-ctrl slider-ctrl-prev"></button>
+                    <button class="slider-ctrl slider-ctrl-next"></button>
 
-                <ul class="slides">
-                    <li class="slides-item">
-                        <figure class="slide">
-                            <p class="slide-title"><span class="slide-title-color">affordable</span> paris tours</p>
-                            <figcaption>
-                                <p class="slide-caption">city tours / tour tickets / tour guides</p>
-                            </figcaption>
-                        </figure>
-                    </li>
-                </ul>
-
+                    <ul class="slides">
+                        <li class="slides-item">
+                            <figure class="slide">
+                                <p class="slide-title"><span class="slide-title-color">affordable</span> paris tours</p>
+                                <figcaption>
+                                    <p class="slide-caption">city tours / tour tickets / tour guides</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
+        <!-- NEW COLLECTION -->
         <section class="collection">
             <div class="container">
-                <h2 class="section-title">new collection</h2>
-                <ul class="products-list clearfix">
-                    <li class="products-list-item">
-                        <a href="#">
-                            <img src="img/blue tshirt.jpg" alt="blue tshirt" width="255" height="282" />
-                            <p class="product-name product-hover">blue tshirt</p>
-                            <p class="product-price product-hover">&#36;26</p>
-                        </a>
-                    </li>
-                    <li class="products-list-item">
-                        <a href="#">
-                            <img src="img/woman shirt.jpg" alt="woman shirt" width="255" height="282" />
-                            <p class="product-name product-hover">woman shirt</p>
-                            <p class="product-price product-hover">&#36;31</p>
-                        </a>
-                    </li>
-                    <li class="products-list-item">
-                        <a href="#">
-                            <img src="img/yellow tshirt.jpg" alt="yellow tshirt" width="255" height="282" />
-                            <p class="product-name product-hover">yellow tshirt</p>
-                            <p class="product-price product-hover">&#36;21</p>
-                        </a>
-                    </li>
-                    <li class="products-list-item">
-                        <a href="#">
-                            <img src="img/cool lingerie.jpg" alt="cool lingerie" width="255" height="282" />
-                            <p class="product-name product-hover">cool lingerie</p>
-                            <p class="product-price product-hover">&#36;56</p>
-                        </a>
-                    </li>
-                </ul>
+                <div class="container-content">
+                    <h2 class="section-title">new collection</h2>
+                    <ul class="products-list clearfix">
+                        <li class="products-list-item">
+                            <a href="#">
+                                <!-- PRODUCT OVERLAY -->
+                                <div class="overlay">
+                                    <ul class="overlay-icons clearfix">
+                                        <li class="like"><button></button></li>
+                                        <li class="mix"><button></button></li>
+                                        <li class="time"><button></button></li>
+                                        <li class="cart"><button class="cart-button"><span>add to cart</span></button></li>
+                                    </ul>
+                                </div>
+                                <img src="img/blue tshirt.jpg" class="product-img" alt="blue tshirt" width="255"
+                                    height="322" />
+                                <p class="product-name product-hover">blue tshirt</p>
+                                <p class="product-price product-hover">&#36;26</p>
+                            </a>
+                        </li>
+                        <li class="products-list-item">
+                            <a href="#">
+                                <div class="overlay">
+                                    <ul class="overlay-icons clearfix">
+                                        <li class="like"><button></button></li>
+                                        <li class="mix"><button></button></li>
+                                        <li class="time"><button></button></li>
+                                        <li class="cart"><button class="cart-button"><span>add to cart</span></button></li>
+                                    </ul>
+                                </div>
+                                <img src="img/woman shirt.jpg" class="product-img" alt="woman shirt" width="255"
+                                    height="322" />
+                                <p class="product-name product-hover">woman shirt</p>
+                                <p class="product-price product-hover">&#36;31</p>
+                            </a>
+                        </li>
+                        <li class="products-list-item">
+                            <a href="#">
+                                    <div class="overlay">
+                                            <ul class="overlay-icons clearfix">
+                                                <li class="like"><button></button></li>
+                                                <li class="mix"><button></button></li>
+                                                <li class="time"><button></button></li>
+                                                <li class="cart"><button class="cart-button"><span>add to cart</span></button></li>
+                                            </ul>
+                                        </div>
+                                <img src="img/yellow tshirt.jpg" class="product-img" alt="yellow tshirt" width="255"
+                                    height="322" />
+                                <p class="product-name product-hover">yellow tshirt</p>
+                                <p class="product-price product-hover">&#36;21</p>
+                            </a>
+                        </li>
+                        <li class="products-list-item">
+                            <a href="#">
+                                    <div class="overlay">
+                                            <ul class="overlay-icons clearfix">
+                                                <li class="like"><button></button></li>
+                                                <li class="mix"><button></button></li>
+                                                <li class="time"><button></button></li>
+                                                <li class="cart"><button class="cart-button"><span>add to cart</span></button></li>
+                                            </ul>
+                                        </div>
+                                <img src="img/cool lingerie.jpg" class="product-img" alt="cool lingerie" width="255"
+                                    height="322" />
+                                <p class="product-name product-hover">cool lingerie</p>
+                                <p class="product-price product-hover">&#36;56</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>
-    <footer>
-<p class="footer-info">All Rights Reserved © Dokan | Designed <span>ThemenGraph</span></p>
+    <footer class="footer-bg">
+        <div class="container">
+            <p class="footer-info">All Rights Reserved © Dokan | Designed <span>ThemenGraph</span></p>
+        </div>
     </footer>
 </body>
 

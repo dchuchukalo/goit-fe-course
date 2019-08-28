@@ -20,9 +20,15 @@ img {
   clear: both;
 }
 
-.container {
+.container-content {
   width: 1110px;
   margin: 0px auto;
+}
+
+.container {
+  width: 1600px;
+  margin: 0px auto;
+  
 }
 
 .visuallyhidden:not(:focus):not(:active),
@@ -146,6 +152,7 @@ body {
   top: 225px;
   color: rgba(255, 255, 255, 1);
   z-index: 1;
+  cursor: pointer;
 }
 
 .slider-ctrl:hover,
@@ -249,12 +256,8 @@ body {
   margin-right: 30px;
 }
 
-.products-list a:hover .product-hover,
-.products-list a:focus .product-hover {
-  background-color: #1abc9c;
-}
-
 .products-list-item a {
+  position: relative;
   display: block;
   text-decoration: none;
 }
@@ -285,17 +288,109 @@ body {
   bottom: 0;
 }
 
+/* PRODUCT OVERLAY */
+.overlay {
+  position: absolute;
+  width: 235px;
+  height: 263px;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 1);
+  margin: 10px;
+  opacity: 0;
+}
+
+.products-list a:hover .product-hover,
+.products-list a:focus .product-hover {
+  background-color: #1abc9c;
+}
+
+.products-list a:hover .overlay,
+.products-list a:focus .overlay {
+  opacity: 1;
+}
+
+.products-list a:hover .product-img,
+.products-list a:focus .product-img {
+  opacity: 0.5;
+}
+
+.overlay-icons {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  opacity: 1;
+  z-index: 1;
+  font-family: "pe-icon-7-stroke";
+  line-height: 32px;
+  font-size: 30px;
+}
+
+.overlay-icons button {
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  width: 50px;
+  height: 50px;
+}
+
+.overlay-icons li {
+  float: left;
+}
+
+.overlay-icons li:not(:nth-last-of-type(-n + 2)) {
+  margin-right: 8px;
+}
+
+.overlay-icons li:not(:last-child) {
+  margin-bottom: 7px;
+}
+
+.cart button {
+  width: 166px;
+}
+
+.cart span {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+
+.overlay-icons button:hover,
+.overlay-icons button:focus {
+  background-color: #1abc9c;
+  border: none;
+}
+
+.cart button:hover,
+.cart button:focus {
+  background-color: #323232;
+  border: 1px solid #ffffff;
+}
+
 /* Footer */
+.footer-bg {
+  background-color: #323232;
+}
+
 .footer-info {
   margin: 0;
   padding: 30px 0;
   text-align: center;
   font-size: 16px;
   line-height: 28px;
-  background-color: #323232;
   color: #fefefe;
 }
 
 .footer-info span {
- color: #46bfa9; 
+  color: #46bfa9;
 }

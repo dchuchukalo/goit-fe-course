@@ -58,6 +58,10 @@ body {
   min-height: 92px;
 }
 
+.page-nav a {
+  display: block;
+}
+
 .site-logo {
   font-family: "Roboto", sans-serif;
   font-size: 30px;
@@ -169,7 +173,7 @@ body {
 }
 
 .slides-item {
-  height: 600px;
+  min-height: 600px;
   position: relative;
 }
 

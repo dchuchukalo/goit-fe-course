@@ -128,7 +128,7 @@ body {
       rgba(0, 0, 0, 0.52),
       rgba(0, 0, 0, 0.52)
     ),
-    url(/img/slide4.jpg);
+    url(../img/slide4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

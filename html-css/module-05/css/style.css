@@ -28,7 +28,6 @@ img {
 .container {
   width: 1600px;
   margin: 0px auto;
-  
 }
 
 .visuallyhidden:not(:focus):not(:active),

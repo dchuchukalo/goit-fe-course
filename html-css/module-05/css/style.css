@@ -20,13 +20,8 @@ img {
   clear: both;
 }
 
-.container-content {
-  width: 1110px;
-  margin: 0px auto;
-}
-
 .container {
-  width: 1600px;
+  width: 1110px;
   margin: 0px auto;
 }
 
@@ -123,6 +118,7 @@ body {
 /* Slider */
 .banner {
   min-height: 600px;
+  min-width: 1110px;
   background-image: linear-gradient(
       to top,
       rgba(0, 0, 0, 0.52),
@@ -211,6 +207,7 @@ body {
 .collection {
   background-color: #e9f0fd;
   padding-bottom: 100px;
+  min-width: 1110px;
 }
 
 .section-title,
@@ -379,6 +376,7 @@ body {
 /* Footer */
 .footer-bg {
   background-color: #323232;
+  min-width: 1110px;
 }
 
 .footer-info {

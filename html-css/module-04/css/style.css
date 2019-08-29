@@ -148,6 +148,7 @@ body {
 .products-list-item {
   width: 255px;
   float: left;
+  cursor: pointer;
 }
 
 .products-list-item:not(:nth-of-type(4n + 4)) {
@@ -164,14 +165,9 @@ body {
   padding: 0;
 }
 
-.products-list a:hover .product-hover,
-.products-list a:focus .product-hover{
+.products-list-item:hover .product-hover,
+.products-list-item:focus .product-hover{
   background-color: #1abc9c;
-}
-
-.products-list-item a {
-  display: block;
-  text-decoration: none;
 }
 
 .products-list-item p {

@@ -130,9 +130,6 @@ body {
 }
 
 .slider-ctrl {
-  font-family: "pe-icon-7-stroke";
-  font-size: 100px;
-  line-height: 11px;
   border: none;
   background-color: rgba(78, 198, 171, 0.65);
   width: 104px;
@@ -151,10 +148,16 @@ body {
 }
 
 .slider-ctrl-prev {
+  background-image: url(../img/png/prev.png);
+  background-repeat: no-repeat;
+  background-position: center;
   left: 0;
 }
 
 .slider-ctrl-next {
+  background-image: url(../img/png/next.png);
+  background-repeat: no-repeat;
+  background-position: center;
   right: 0;
 }
 
@@ -241,16 +244,12 @@ body {
   width: 255px;
   float: left;
   position: relative;
+  display: block;
+  text-decoration: none;
 }
 
 .products-list-item:not(:nth-of-type(4n + 4)) {
   margin-right: 30px;
-}
-
-.products-list-item a {
-  position: relative;
-  display: block;
-  text-decoration: none;
 }
 
 .products-list-item p {
@@ -291,18 +290,18 @@ body {
   opacity: 0;
 }
 
-.products-list a:hover .product-hover,
-.products-list a:focus .product-hover {
+.products-list-item:hover .product-hover,
+.products-list-item:focus .product-hover {
   background-color: #1abc9c;
 }
 
-.products-list a:hover .overlay,
-.products-list a:focus .overlay {
+.products-list-item:hover .overlay,
+.products-list-item:focus .overlay {
   opacity: 1;
 }
 
-.products-list a:hover .product-img,
-.products-list a:focus .product-img {
+.products-list-item:hover .product-img,
+.products-list-item:focus .product-img {
   opacity: 0.5;
 }
 
@@ -321,7 +320,7 @@ body {
   font-size: 30px;
 }
 
-.overlay-icons button {
+.overlay-icons-item {
   display: block;
   text-align: center;
   cursor: pointer;
@@ -345,7 +344,7 @@ body {
   margin-bottom: 7px;
 }
 
-.cart button {
+.cart {
   width: 166px;
   text-align: left;
   padding: 8px 13px;
@@ -359,20 +358,44 @@ body {
   font-size: 14px;
   line-height: 32px;
   text-transform: uppercase;
-  padding-left: 18px;
   vertical-align: top;
+  padding-left: 55px;
 }
 
-.overlay-icons button:hover,
-.overlay-icons button:focus {
+.overlay-icons-item:hover,
+.overlay-icons-item:focus {
   background-color: #1abc9c;
   border: none;
 }
 
-.cart button:hover,
-.cart button:focus {
+.cart:hover,
+.cart:focus {
   background-color: #323232;
   border: 1px solid #ffffff;
+}
+
+.like {
+  background-image: url(../img/png/like.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.mix {
+  background-image: url(../img/png/mix.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.time {
+  background-image: url(../img/png/time.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cart {
+  background-image: url(../img/png/cart.png);
+  background-repeat: no-repeat;
+  background-position: top 12px left 13px;
 }
 
 /* Footer */

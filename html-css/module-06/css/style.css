@@ -43,3 +43,128 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #333333;
+  line-height: 17px;
+}
+
+/* PAGE HEADER */
+.page-header {
+  margin-bottom: 126px;
+}
+
+.page-nav {
+  display: flex;
+  justify-content: space-between;
+  min-height: 50px;
+  align-items: flex-end;
+}
+
+.site-logo {
+  text-decoration: none;
+  color: #95e1d3;
+  display: block;
+}
+
+.site-logo p {
+  margin: 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 490px;
+}
+
+.site-navigation-item {
+  text-decoration: none;
+  color: #95e1d3;
+  text-transform: uppercase;
+  display: block;
+}
+
+.site-navigation-item::after {
+  display: block;
+  width: auto;
+  height: 3px;
+  content: "";
+  background-color: #f38181;
+  margin-top: 12px;
+}
+
+/* SERVICES */
+.section-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 36px;
+  margin: 0 0 62px 0;
+  font-size: 30px;
+}
+
+.service-title::before {
+display: block;
+content: "We work with";
+font-family: 'Kaushan Script', cursive;
+line-height: 29px;
+font-weight: 400;
+text-transform: none;
+font-size: 24px;
+/* сделать италик */
+}
+
+.section-title::after {
+  display: block;
+  content: "";
+  margin: 40px auto 0 auto;
+  height: 3px;
+  width: 60px;
+  background-color: #f38181;
+}
+
+/* SERVICE LIST */
+.service-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.service-list-item {
+  flex-basis: 300px;
+}
+
+.service-name {
+  text-transform: uppercase;
+  margin: 0 0 14px 0;
+}
+
+.service-descr {
+  color: #999999;
+  font-size: 15px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.service-list-item::before {
+  display: inline-block;
+  content: "";
+  width: 80px;
+  height: 80px;
+  background-color: teal;
+}
+
+/* font-family: 'Kaushan Script', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif; */

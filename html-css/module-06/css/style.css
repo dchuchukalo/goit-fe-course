@@ -114,6 +114,10 @@ body {
 }
 
 /* SERVICES */
+.services {
+  margin-bottom: 86px;
+}
+
 .section-title {
   font-weight: 700;
   text-transform: uppercase;
@@ -123,14 +127,19 @@ body {
   font-size: 30px;
 }
 
-.service-title::before {
+.section-title::before {
   display: block;
-  content: "We work with";
+  content: "";
   font-family: "Kaushan Script", cursive;
   line-height: 29px;
   font-weight: 400;
   text-transform: none;
   font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.service-title::before {
+content: "We work with";
 }
 
 .section-title::after {
@@ -205,6 +214,11 @@ body {
 
 .icon-image::before {
   background-image: url(../img/icons/IMAGE.png);
+}
+
+/* TEAM */
+.team-title::before {
+  content: "Who we are";
 }
 
 /* font-family: 'Kaushan Script', cursive;

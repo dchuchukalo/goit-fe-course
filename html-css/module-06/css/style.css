@@ -53,7 +53,7 @@ body {
 
 /* PAGE HEADER */
 .page-header {
-  margin-bottom: 126px;
+  margin-bottom: 164px;
 }
 
 .page-nav {
@@ -86,6 +86,7 @@ body {
 }
 
 .site-navigation a {
+  position: relative;
   text-decoration: none;
   color: #95e1d3;
   text-transform: uppercase;
@@ -99,12 +100,13 @@ body {
 }
 
 .site-navigation a::after {
+  position: absolute;
   display: block;
-  width: auto;
+  width: 100%;
   height: 3px;
   content: "";
   background-color: #f38181;
-  margin-top: 10px;
+  bottom: -10px;
   opacity: 0;
   transition: opacity 200ms linear;
 }
@@ -119,15 +121,20 @@ body {
 }
 
 .section-title {
+  position: relative;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
   line-height: 36px;
-  margin: 0 0 62px 0;
+  margin: 0;
   font-size: 30px;
 }
 
 .section-title::before {
+  position: absolute;
+  left: 50%;
+  top: -40px;
+  transform: translateX(-50%);
   display: block;
   content: "";
   font-family: "Kaushan Script", cursive;
@@ -135,7 +142,10 @@ body {
   font-weight: 400;
   text-transform: none;
   font-size: 24px;
-  margin-bottom: 10px;
+}
+
+.service-title {
+  margin-bottom: 100px;
 }
 
 .service-title::before {
@@ -143,9 +153,12 @@ content: "We work with";
 }
 
 .section-title::after {
+  position: absolute;
+  left: 50%;
+  bottom: -34px;
+  transform: translateX(-50%);
   display: block;
   content: "";
-  margin: 40px auto 0 auto;
   height: 3px;
   width: 60px;
   background-color: #f38181;
@@ -217,8 +230,117 @@ content: "We work with";
 }
 
 /* TEAM */
+.team-title {
+  margin-bottom: 86px;
+}
+
 .team-title::before {
   content: "Who we are";
+}
+
+.team-descr {
+  margin: 0 auto;
+  text-align: center;
+  width: 980px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #999999;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 90px;
+}
+
+.team-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.team-list-item {
+  flex: 0 0 380px;
+  text-align: center;
+}
+
+.team-list-item img {
+  margin-bottom: 28px;
+}
+
+.member-name {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.occupation {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 24px;
+  font-family: 'Roboto', sans-serif;
+  color: #999999;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.main-content {
+  margin-bottom: 80px;
+}
+
+/* FOOTER */
+.page-footer {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 60px;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  border-top: 1px solid #e5e5e5;
+}
+
+.copyright-info {
+  margin: 0;
+}
+
+.copyright-info span {
+  color: #f38181;
+}
+
+input[type="email"] {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  border: 1px solid #cccccc;
+  min-height: 40px;
+  padding: 0;
+  margin: 0;
+  flex: 0 0 230px;
+  line-height: 24px;
+  padding-left: 17px;
+  border-right: none;
+}
+
+input[type="submit"] {
+  text-transform: uppercase;
+  font-weight: 700;
+  flex: 0 0 150px;
+  padding: 0;
+  border: none;
+  background-color: #95e1d3;
+  min-height: 40px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 380px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 /* font-family: 'Kaushan Script', cursive;

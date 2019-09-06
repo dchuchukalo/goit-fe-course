@@ -44,7 +44,7 @@ input[type="radio"].visually-hidden {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #333333;
@@ -85,20 +85,32 @@ body {
   width: 490px;
 }
 
-.site-navigation-item {
+.site-navigation a {
   text-decoration: none;
   color: #95e1d3;
   text-transform: uppercase;
   display: block;
+  transition: color 200ms linear;
 }
 
-.site-navigation-item::after {
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #f38181;
+}
+
+.site-navigation a::after {
   display: block;
   width: auto;
   height: 3px;
   content: "";
   background-color: #f38181;
-  margin-top: 12px;
+  margin-top: 10px;
+  opacity: 0;
+  transition: opacity 200ms linear;
+}
+
+.site-navigation a:hover:after {
+  opacity: 1;
 }
 
 /* SERVICES */
@@ -112,14 +124,13 @@ body {
 }
 
 .service-title::before {
-display: block;
-content: "We work with";
-font-family: 'Kaushan Script', cursive;
-line-height: 29px;
-font-weight: 400;
-text-transform: none;
-font-size: 24px;
-/* сделать италик */
+  display: block;
+  content: "We work with";
+  font-family: "Kaushan Script", cursive;
+  line-height: 29px;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 24px;
 }
 
 .section-title::after {
@@ -142,7 +153,7 @@ font-size: 24px;
 }
 
 .service-list-item {
-  flex-basis: 300px;
+  flex: 0 0 380px;
 }
 
 .service-name {
@@ -155,14 +166,45 @@ font-size: 24px;
   font-size: 15px;
   line-height: 24px;
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 .service-list-item::before {
-  display: inline-block;
+  float: left;
+  display: block;
   content: "";
   width: 80px;
-  height: 80px;
-  background-color: teal;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-position: center 4px;
+}
+
+.service-list-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 100px;
+}
+
+.icon-alarm::before {
+  background-image: url(../img/icons/ALARM.png);
+}
+
+.icon-line-graph::before {
+  background-image: url(../img/icons/LINE-GRAPH.png);
+}
+
+.icon-computer::before {
+  background-image: url(../img/icons/COMPUTER.png);
+}
+
+.icon-book::before {
+  background-image: url(../img/icons/BOOK.png);
+}
+
+.icon-home::before {
+  background-image: url(../img/icons/HOME.png);
+}
+
+.icon-image::before {
+  background-image: url(../img/icons/IMAGE.png);
 }
 
 /* font-family: 'Kaushan Script', cursive;

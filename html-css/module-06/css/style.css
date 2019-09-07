@@ -405,8 +405,10 @@ opacity: 0.9;
   margin: 0;
 }
 
-.copyright-info span {
+.copyright-info a {
+  display: inline-block;
   color: #f38181;
+  text-decoration: none;
 }
 
 input[type="email"] {

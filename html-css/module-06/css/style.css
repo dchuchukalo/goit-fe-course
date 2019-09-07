@@ -111,7 +111,8 @@ body {
   transition: opacity 200ms linear;
 }
 
-.site-navigation a:hover:after {
+.site-navigation a:hover:after,
+.site-navigation a:focus:after {
   opacity: 1;
 }
 
@@ -262,11 +263,28 @@ content: "We work with";
 .team-list-item {
   flex: 0 0 380px;
   text-align: center;
+  position: relative;
 }
 
-.team-list-item img {
+.team-list-img {
   margin-bottom: 28px;
+  position: relative;
+  left: 0;
+  top: 0;
+  transition: top 200ms linear, left 200ms linear ;
 }
+
+.team-list-img::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient( to top, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+  opacity: 0;
+  transition: opacity 200ms linear;
+  }
+
 
 .member-name {
   margin: 0;
@@ -289,6 +307,26 @@ content: "We work with";
 .main-content {
   margin-bottom: 80px;
 }
+
+/* HOVER TEAM LIST */
+.team-list-item-bg {
+  width: 380px;
+  height: 470px;
+  background-color: #95e1d3;
+  position: absolute;
+}
+
+.team-list-item:hover .team-list-img,
+.team-list-item:focus .team-list-img{
+  left: -10px;
+  top: -10px;
+}
+
+.team-list-item:hover .team-list-img::before,
+.team-list-item:focus .team-list-img::before {
+opacity: 0.9;
+}
+
 
 /* FOOTER */
 .page-footer {

@@ -272,6 +272,9 @@ content: "We work with";
   left: 0;
   top: 0;
   transition: top 200ms linear, left 200ms linear ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .team-list-img::before {
@@ -327,6 +330,65 @@ content: "We work with";
 opacity: 0.9;
 }
 
+.team-list-item:hover .overlay-icons,
+.team-list-item:focus .overlay-icons {
+  opacity: 1;
+}
+
+.overlay-icons {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: flex;
+  width: 223px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 200ms linear;
+}
+
+.overlay-icons-item {
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  background-color: #fce38a;
+  border: none;
+  height: 55px;
+  width: 55px;
+  margin: 0;
+  padding: 0;
+  transition: background-color 200ms linear;
+}
+
+.facebook {
+  background-image: url(../img/icons/facebook.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.twitter {
+  background-image: url(../img/icons/twitter.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pinterest {
+  background-image: url(../img/icons/pinterest.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.instagram {
+  background-image: url(../img/icons/instagram.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.overlay-icons-item:hover,
+.overlay-icons-item:focus {
+  background-color: #95e1d3;
+}
 
 /* FOOTER */
 .page-footer {

@@ -53,7 +53,7 @@ body {
 
 /* PAGE HEADER */
 .page-header {
-  margin-bottom: 164px;
+  margin-bottom: 126px;
 }
 
 .page-nav {
@@ -82,7 +82,7 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-  width: 490px;
+  min-width: 490px;
 }
 
 .site-navigation a {
@@ -131,26 +131,19 @@ body {
   font-size: 30px;
 }
 
-.section-title::before {
-  position: absolute;
-  left: 50%;
-  top: -40px;
-  transform: translateX(-50%);
+.section-pre-title {
   display: block;
-  content: "";
   font-family: "Kaushan Script", cursive;
   line-height: 29px;
   font-weight: 400;
-  text-transform: none;
   font-size: 24px;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 13px;
 }
 
 .service-title {
   margin-bottom: 100px;
-}
-
-.service-title::before {
-content: "We work with";
 }
 
 .section-title::after {
@@ -233,10 +226,6 @@ content: "We work with";
 /* TEAM */
 .team-title {
   margin-bottom: 86px;
-}
-
-.team-title::before {
-  content: "Who we are";
 }
 
 .team-descr {

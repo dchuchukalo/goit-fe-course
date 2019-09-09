@@ -140,6 +140,7 @@ body {
   margin: 0;
   text-align: center;
   margin-bottom: 13px;
+  text-transform: none;
 }
 
 .service-title {

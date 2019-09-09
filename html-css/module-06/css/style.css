@@ -402,9 +402,6 @@ opacity: 0.9;
 }
 
 input[type="email"] {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-style: italic;
   border: 1px solid #cccccc;
   min-height: 40px;
   padding: 0;
@@ -413,6 +410,12 @@ input[type="email"] {
   line-height: 24px;
   padding-left: 17px;
   border-right: none;
+}
+
+input[type="email"]::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: italic;
 }
 
 button[type="submit"] {

@@ -14,12 +14,6 @@ img {
   height: auto;
 }
 
-.clearfix::after {
-  display: table;
-  content: "";
-  clear: both;
-}
-
 .visuallyhidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -39,7 +33,7 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-  width: 940;
+  width: 940px;
   margin: 0px auto;
 }
 
@@ -51,7 +45,19 @@ body {
   line-height: 17px;
 }
 
+/* PAGE HEADER */
+.page-nav {
+  display: flex;
+  justify-content: space-between;
+  min-height: 65px;
+  align-items: flex-end;
+}
 
-/* font-family: 'Kaushan Script', cursive;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Roboto', sans-serif; */
+.site-logo {
+  text-decoration: none;
+  color: #fed443;
+  display: block;
+  font-family: 'Aguafina Script', serif;
+  font-size: 26px;
+  line-height: 31px;
+}

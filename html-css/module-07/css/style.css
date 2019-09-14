@@ -182,6 +182,7 @@ body {
   background-image: url(../img/icons/Map-Image.png);
   background-repeat: no-repeat;
   background-position: right bottom 20px;
+  text-align: center;
 }
 
 .contuct-title {
@@ -201,33 +202,62 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  color: #bbbbbb;
 }
 
-.contact-form-item:not(:last-child) {
+.contact-form li:not(:last-child) {
   margin-bottom: 30px;
 }
 
-.contact-form-item input {
-  padding: 0;
+.contact-form-item,
+.contact-form-message {
   width: 455px;
   height: 50px;
   border: 1px solid #cccccc;
   border-radius: 2px;
   background-color: #ffffff;
+  padding: 16px 20px;
+}
+
+.contact-form-item::placeholder,
+.contact-form-message::placeholder {
+  color: #bbbbbb;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+.contact-form-item:required:valid,
+.contact-form-message:required:valid {
+  outline: 1px solid #00ff00;
+}
+
+.contact-form-item:required:invalid,
+.contact-form-message:required:invalid {
+  outline: 1px solid #ff0000;
 }
 
 .contact-form-message {
   resize: none;
-  padding: 0;
-  width: 455px;
   height: 210px;
-  border: 1px solid #cccccc;
-  border-radius: 2px;
-  background-color: #ffffff;
 }
 
 .contact-form-position {
   display: flex;
   justify-content: space-between;
   padding-bottom: 30px;
+}
+
+.send-message {
+  width: 240px;
+  height: 66px;
+  border-radius: 3px;
+  background-color: rgb(254, 209, 54);
+  border: none;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #ffffff;
+  text-transform: uppercase;
 }

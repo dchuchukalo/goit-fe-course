@@ -44,6 +44,7 @@ body {
   color: #222222;
   line-height: 17px;
   background-color: #ffffff;
+  min-width: 940px;
 }
 
 /* PAGE HEADER */

@@ -43,6 +43,7 @@ body {
   font-size: 14px;
   color: #222222;
   line-height: 17px;
+  background-color: #ffffff;
 }
 
 /* PAGE HEADER */
@@ -57,10 +58,11 @@ body {
   text-decoration: none;
   color: #fed443;
   display: block;
-  font-family: 'Aguafina Script', serif;
+  font-family: "Aguafina Script", serif;
   font-size: 26px;
   line-height: 41px;
   padding-left: 6px;
+  letter-spacing: 0.05em;
 }
 
 .site-navigation {
@@ -78,7 +80,7 @@ body {
   text-transform: uppercase;
   display: block;
   transition: color 200ms linear;
-  font-family: 'Montserrat', serif;
+  font-family: "Montserrat", serif;
   line-height: 41px;
   color: #222222;
 }
@@ -101,12 +103,13 @@ body {
   margin: 0;
   font-size: 40px;
   margin-bottom: 75px;
+  letter-spacing: -0.025em;
 }
 
 .section-after-title {
   display: block;
   color: #777777;
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif", serif;
   font-style: italic;
   line-height: 19px;
   font-weight: 400;
@@ -115,6 +118,7 @@ body {
   text-align: center;
   text-transform: none;
   margin-top: 10px;
+  letter-spacing: normal;
 }
 
 .service-list {
@@ -123,12 +127,14 @@ body {
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
+  margin-bottom: 120px;
   padding: 0;
 }
 
 .service-list-item {
   flex: 0 0 290px;
   text-align: center;
+  letter-spacing: -0.025em;
 }
 
 .service-name {
@@ -143,7 +149,7 @@ body {
   font-size: 14px;
   line-height: 17px;
   margin: 0;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
 }
 
 .service-list-item::before {
@@ -168,4 +174,60 @@ body {
 
 .icon-locked::before {
   background-image: url(../img/icons/Icon-Locked.png);
+}
+
+/* CONTACT */
+.contact {
+  background-color: #222222;
+  background-image: url(../img/icons/Map-Image.png);
+  background-repeat: no-repeat;
+  background-position: right bottom 20px;
+}
+
+.contuct-title {
+  color: #ffffff;
+}
+
+.feedback-form {
+  padding-top: 100px;
+  padding-bottom: 115px;
+}
+
+.after-title-contact {
+  margin-top: 14px;
+}
+
+.contact-form {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-form-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.contact-form-item input {
+  padding: 0;
+  width: 455px;
+  height: 50px;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  background-color: #ffffff;
+}
+
+.contact-form-message {
+  resize: none;
+  padding: 0;
+  width: 455px;
+  height: 210px;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  background-color: #ffffff;
+}
+
+.contact-form-position {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
 }

@@ -96,6 +96,10 @@ body {
 }
 
 /* SERVICES */
+.services {
+  padding-bottom: 120px;
+}
+
 .section-title {
   font-weight: 700;
   text-transform: uppercase;
@@ -128,7 +132,6 @@ body {
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
-  margin-bottom: 120px;
   padding: 0;
 }
 
@@ -186,12 +189,12 @@ body {
   text-align: center;
 }
 
-.contuct-title {
+.contact-title {
   color: #ffffff;
+  padding-top: 100px;
 }
 
 .feedback-form {
-  padding-top: 100px;
   padding-bottom: 115px;
 }
 
@@ -253,7 +256,7 @@ body {
   width: 240px;
   height: 66px;
   border-radius: 3px;
-  background-color: rgb(254, 209, 54);
+  background-color: #fed136;
   border: none;
   font-size: 18px;
   line-height: 22px;
@@ -261,4 +264,16 @@ body {
   cursor: pointer;
   color: #ffffff;
   text-transform: uppercase;
+  transition: background-color 200ms linear,
+              color 200ms linear,
+              box-shadow 200ms linear,
+              transform 200ms linear;
+}
+
+.send-message:hover,
+.send-message:focus {
+  background-color: #ffffff;
+  color: #fed136;
+  box-shadow: inset 0 0 0 3px #fed136;
+  transform: scale(1.1);
 }

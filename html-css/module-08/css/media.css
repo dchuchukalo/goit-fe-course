@@ -1,0 +1,168 @@
+@media screen and (max-width: 747px) {
+  .container {
+    width: 320px;
+  }
+
+  /* BANNER */
+  .banner {
+    min-height: 540px;
+  }
+
+  /* HEADER */
+  /* NAV */
+  .page-nav {
+    padding-top: 20px;
+    text-align: center;
+    margin-bottom: 26px;
+  }
+
+  .enter-menu {
+    justify-content: center;
+    margin-bottom: 116px;
+  }
+
+  /* SEARCH-PARTNER */
+  .search-partner-descr h2 {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
+
+  .search-partner-descr figcaption {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 0 50px;
+  }
+
+  .search-partner-descr {
+    margin-bottom: 16px;
+  }
+
+  .search-partner-button {
+    width: 280px;
+  }
+
+  /* APPLICANTS*/
+  .applicants-title {
+    padding-top: 66px;
+    margin-bottom: 12px;
+  }
+
+  .applicants-list-item:not(:last-child) {
+    margin-bottom: 26px;
+  }
+
+  .applicants-list {
+    margin-bottom: 26px;
+  }
+
+  .applicants {
+    padding-bottom: 56px;
+  }
+}
+
+@media screen and (min-width: 748px) and (max-width: 939px) {
+  .container {
+    width: 748px;
+  }
+
+  /* HEADER */
+  /* NAV */
+  .page-nav {
+    padding-right: 38px;
+    padding-left: 38px;
+  }
+
+  /* APPLICANTS LIST */
+  .applicants-list {
+    width: 492px;
+    margin: 0 auto;
+  }
+
+  .applicants-list-item {
+    flex: 0 0 236px;
+  }
+
+  .applicants-list-item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 56px;
+  }
+
+  /* SEE OTHER BUTTON */
+  .applicants {
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 940px) {
+  .container {
+    width: 940px;
+  }
+
+  /* APPLICANTS LIST */
+  .applicants-list-item {
+    flex: 0 0 220px;
+  }
+
+   /* SEE OTHER BUTTON */
+   .applicants {
+    padding-bottom: 72px;
+  }
+}
+
+@media screen and (min-width: 748px) {
+  /* BANNER */
+  .banner {
+    min-height: 700px;
+  }
+
+  /* HEADER */
+  /* NAV */
+  .page-nav {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 38px;
+    padding-bottom: 0;
+    margin-bottom: 140px;
+  }
+
+  /* SEARCH-PARTNER */
+  .search-partner {
+    width: 510px;
+    margin: 0 auto;
+  }
+
+  .search-partner-descr {
+    margin-bottom: 32px;
+  }
+
+  .search-partner-descr h2 {
+    font-size: 52px;
+    line-height: 62px;
+    margin-bottom: 28px;
+  }
+
+  .search-partner-descr figcaption {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .search-partner-button {
+    width: 226px;
+  }
+
+  /* APPLICANTS*/
+  .applicants-title {
+    padding-top: 70px;
+    margin-bottom: 30px;
+  }
+
+  /* APPLICANTS LIST */
+  .applicants-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 38px;
+  }
+}

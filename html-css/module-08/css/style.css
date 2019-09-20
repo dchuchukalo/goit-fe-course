@@ -33,7 +33,6 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-  width: 940px;
   margin: 0px auto;
 }
 
@@ -41,11 +40,167 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  color: #222222;
+  color: #333333;
   line-height: 17px;
   background-color: #ffffff;
-  min-width: 940px;
 }
 
-/* font-family: 'Montserrat', sans-serif;
-font-family: 'Roboto', sans-serif; */
+/* BANNER */
+.banner {
+  background-image: url(../img/jpg/Banner_1440x700.jpg);
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: cover;
+}
+
+/* HEADER */
+/* NAV */
+.enter-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.enter-menu a {
+  display: block;
+  text-decoration: none;
+  font-weight: 700;
+  color: #ffffff;
+  width: 90px;
+  height: 36px;
+  padding: 10px 0;
+  border-radius: 18px;
+  text-align: center;
+  transition: box-shadow 200ms linear;
+}
+
+.enter-menu a:hover,
+.enter-menu a:focus {
+  box-shadow: inset 0 0 0 2px #ffffff;
+}
+
+/* LOGO */
+.site-logo {
+  margin: 0;
+}
+
+.site-logo a {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  transition: text-shadow 200ms linear;
+}
+
+.site-logo a:hover,
+.site-logo a:focus {
+  text-shadow: 5px 3px 3px #ff4e50;
+}
+
+/* SEARCH-PARTNER */
+.search-partner {
+  text-align: center;
+}
+
+.search-partner-descr {
+  margin: 0;
+  color: #ffffff;
+}
+
+.search-partner-descr h2 {
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.search-partner-descr figcaption {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.search-partner-button {
+  display: inline-block;
+  height: 40px;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #ff4e50;
+  border-radius: 20px;
+  padding: 11px 0;
+  transition: box-shadow 200ms linear, transform 200ms linear;
+}
+
+.search-partner-button:hover,
+.search-partner-button:focus {
+  box-shadow: inset 0 0 0 2px #ffffff;
+  transform: scale(1.05);
+}
+
+/* APPLICANTS*/
+.applicants {
+  text-align: center;
+}
+
+.applicants-title {
+  margin: 0;
+  font-size: 22px;
+  line-height: 26px;
+  
+}
+
+/* APPLICANTS LIST */
+.applicants-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.applicant {
+  margin: 0 0 14px 0;
+}
+
+.applicant img {
+  margin: 0 auto 18px auto;
+  border-radius: 50%;
+}
+
+.applicant-name {
+  font-weight: 700;
+}
+
+.applicant-descr {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  width: 220px;
+  margin: 0 auto;
+}
+
+/* SEE OTHER BUTTON */
+.see-other-button {
+  display: inline-block;
+  width: 280px;
+  height: 40px;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 700;
+  color: #ff4e50;
+  background-color: #ffffff;
+  border: 2px solid #ff4e50;
+  border-radius: 20px;
+  padding: 11px 0;
+  transition: background-color 200ms linear,
+              color 200ms linear,
+              transform 200ms linear;
+}
+
+.see-other-button:hover,
+.see-other-button:focus {
+  transform: scale(1.05);
+  background-color: #ff4e50;
+  color: #ffffff;
+}

@@ -1,4 +1,4 @@
-@media screen and (max-width: 747px) {
+@media screen and (max-width: 767px) {
   .container {
     width: 320px;
   }
@@ -22,19 +22,16 @@
   }
 
   /* SEARCH-PARTNER */
-  .search-partner-descr h2 {
+  .search-partner-title {
     font-size: 30px;
     line-height: 36px;
     margin-bottom: 10px;
   }
 
-  .search-partner-descr figcaption {
+  .search-partner-title-descr {
     font-size: 18px;
     line-height: 22px;
     padding: 0 50px;
-  }
-
-  .search-partner-descr {
     margin-bottom: 16px;
   }
 
@@ -61,7 +58,7 @@
   }
 }
 
-@media screen and (min-width: 748px) and (max-width: 939px) {
+@media screen and (min-width: 768px) and (max-width: 959px) {
   .container {
     width: 748px;
   }
@@ -93,7 +90,7 @@
   }
 }
 
-@media screen and (min-width: 940px) {
+@media screen and (min-width: 960px) {
   .container {
     width: 940px;
   }
@@ -109,7 +106,7 @@
   }
 }
 
-@media screen and (min-width: 748px) {
+@media screen and (min-width: 768px) {
   /* BANNER */
   .banner {
     min-height: 700px;
@@ -133,19 +130,16 @@
     margin: 0 auto;
   }
 
-  .search-partner-descr {
-    margin-bottom: 32px;
-  }
-
-  .search-partner-descr h2 {
+  .search-partner-title {
     font-size: 52px;
     line-height: 62px;
     margin-bottom: 28px;
   }
 
-  .search-partner-descr figcaption {
+  .search-partner-title-descr {
     font-size: 24px;
     line-height: 30px;
+    margin-bottom: 32px;
   }
 
   .search-partner-button {

@@ -107,17 +107,17 @@ body {
   text-align: center;
 }
 
-.search-partner-descr {
+.search-partner-title,
+.search-partner-title-descr {
   margin: 0;
   color: #ffffff;
 }
 
-.search-partner-descr h2 {
+.search-partner-title {
   text-transform: uppercase;
-  margin: 0;
 }
 
-.search-partner-descr figcaption {
+.search-partner-title-descr {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
@@ -159,16 +159,13 @@ body {
   list-style: none;
 }
 
-.applicant {
-  margin: 0 0 14px 0;
-}
-
 .applicant img {
   border-radius: 50%;
 }
 
 .applicant-name {
   font-weight: 700;
+  margin: 0 0 14px 0;
 }
 
 .applicant-descr {
@@ -178,14 +175,14 @@ body {
   margin: 0 auto;
 }
 
-.applicant-img {
+.applicant {
   position: relative;
   width: 121px;
   height: 121px;
   margin: 0 auto 18px auto;
 }
 
-.applicant-img::after {
+.applicant::after {
   position: absolute;
   display: block;
   content: "";

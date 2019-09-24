@@ -60,6 +60,7 @@ body {
   flex-wrap: nowrap;
 }
 
+/* ENTER MENU */
 .enter-menu a {
   display: block;
   text-decoration: none;
@@ -138,11 +139,13 @@ body {
   transform: scale(1.05);
 }
 
+/* MAIN */
 /* APPLICANTS*/
 .applicants {
   text-align: center;
 }
 
+/* APPLICANTS-TITLE */
 .applicants-title {
   margin: 0;
   font-size: 22px;

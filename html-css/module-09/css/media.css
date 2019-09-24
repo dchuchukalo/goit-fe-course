@@ -6,16 +6,18 @@
     text-align: center;
   }
 
-  .site-logo-margin {
-    margin-bottom: 26px;
-  }
-
+ /* ENTER MENU */
   .enter-menu {
     justify-content: center;
   }
-
+  
   .enter-menu-margin {
     margin-bottom: 116px;
+  }
+
+   /* LOGO */
+   .site-logo-margin {
+    margin-bottom: 26px;
   }
 
   /* SEARCH-PARTNER */
@@ -40,6 +42,7 @@
   /* APPLICANTS*/
   .applicants {
     padding-top: 66px;
+    padding-bottom: 56px;
   }
   .applicants-title-margin {
     margin-bottom: 12px;
@@ -47,10 +50,6 @@
 
   .applicants-list [class*="col-"]:not(:last-child) {
     margin-bottom: 26px;
-  }
-
-  .applicants {
-    padding-bottom: 56px;
   }
 }
 
@@ -88,7 +87,6 @@
   }
 
   /* APPLICANTS*/
-
   .applicants {
     padding-top: 70px;
   }
@@ -104,7 +102,7 @@
 }
 
 @media screen and (min-width: 748px) and (max-width: 939px) {
-  /* NAV */
+  /* ENTER MENU */
   .enter-menu {
     justify-content: center;
   }
@@ -132,8 +130,7 @@
 }
 
 @media screen and (min-width: 940px) {
-
-  /* NAV */
+  /* ENTER MENU */
   .enter-menu {
     justify-content: flex-end;
   }

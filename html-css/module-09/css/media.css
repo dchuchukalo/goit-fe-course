@@ -1,0 +1,152 @@
+@media screen and (max-width: 747px) {
+  /* HEADER */
+  /* NAV */
+  .page-nav {
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .site-logo-margin {
+    margin-bottom: 26px;
+  }
+
+  .enter-menu {
+    justify-content: center;
+  }
+
+  .enter-menu-margin {
+    margin-bottom: 116px;
+  }
+
+  /* SEARCH-PARTNER */
+  .search-partner-title {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
+
+  .search-partner-title-descr {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 0 50px;
+    margin-bottom: 16px;
+  }
+
+  .search-partner-button,
+  .see-other-button {
+    width: 280px;
+  }
+
+  /* APPLICANTS*/
+  .applicants {
+    padding-top: 66px;
+  }
+  .applicants-title-margin {
+    margin-bottom: 12px;
+  }
+
+  .applicants-list [class*="col-"]:not(:last-child) {
+    margin-bottom: 26px;
+  }
+
+  .applicants {
+    padding-bottom: 56px;
+  }
+}
+
+@media screen and (min-width: 748px) {
+  /* BANNER */
+  .banner {
+    min-height: 700px;
+  }
+
+  /* HEADER */
+  /* NAV */
+  .page-nav {
+    padding-top: 38px;
+  }
+
+  .page-nav-margin {
+    margin-bottom: 140px;
+  }
+
+  /* SEARCH-PARTNER */
+  .search-partner-title {
+    font-size: 52px;
+    line-height: 62px;
+    margin-bottom: 28px;
+  }
+
+  .search-partner-title-descr {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 32px;
+  }
+
+  .search-partner-button {
+    width: 226px;
+  }
+
+  /* APPLICANTS*/
+
+  .applicants {
+    padding-top: 70px;
+  }
+
+  .applicants-title-margin {
+    margin-bottom: 30px;
+  }
+
+  /* SEE OTHER BUTTON */
+  .see-other-button {
+    width: 192px;
+  }
+}
+
+@media screen and (min-width: 748px) and (max-width: 939px) {
+  /* NAV */
+  .enter-menu {
+    justify-content: center;
+  }
+
+  /* LOGO */
+  .site-logo {
+    text-align: center;
+  }
+
+  /* APPLICANTS */
+  .applicants {
+    padding-bottom: 40px;
+  }
+
+  /* APPLICANTS-LIST */
+  .applicants-list
+    [class*="col-"]:nth-last-child(-n + 3):nth-last-child(n + 2) {
+    margin-bottom: 38px;
+  }
+
+  .applicants-list
+    [class*="col-"]:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 56px;
+  }
+}
+
+@media screen and (min-width: 940px) {
+
+  /* NAV */
+  .enter-menu {
+    justify-content: flex-end;
+  }
+
+  /* APPLICANTS */
+  .applicants {
+    padding-bottom: 72px;
+  }
+
+  /* APPLICANTS-LIST */
+  .applicants-list
+    [class*="col-"]:not(:last-child) {
+    margin-bottom: 38px;
+  }
+  
+}

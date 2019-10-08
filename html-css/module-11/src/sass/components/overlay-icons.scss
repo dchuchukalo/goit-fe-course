@@ -1,0 +1,27 @@
+.overlay-icons {
+  justify-content: space-between;
+  width: 223px;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 200ms linear;
+}
+
+.overlay-icons__link {
+  @include center-flex('all');
+  cursor: pointer;
+  background-color: $primary-accent-color;
+  border: none;
+  height: 55px;
+  width: 55px;
+  transition: background-color 200ms linear;
+}
+
+.overlay-icons__link:hover,
+.overlay-icons__linkS:focus {
+  background-color: $secondary-accent-color;
+}
+
+.overlay-icons__link:hover .social-icon,
+.overlay-icons__linkS:focus .social-icon {
+  fill: $primary-white-color;
+}

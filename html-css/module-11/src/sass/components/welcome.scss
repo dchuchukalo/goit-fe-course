@@ -1,0 +1,36 @@
+.welcome__title-preamble {
+  @extend %title-preamble;
+  font-size: 72px;
+  line-height: 86px;
+  color: $primary-white-color;
+  margin-bottom: 36px;
+}
+
+.welcome__title {
+  font-weight: 700;
+  font-size: 150px;
+  line-height: 140px;
+  text-transform: uppercase;
+  color: $primary-white-color;
+  text-align: center;
+  width: 850px;
+  margin: 0 auto 110px auto;
+}
+
+.welcome__link {
+  width: 160px;
+  height: 40px;
+  border: 3px solid $primary-white-color;
+  text-align: center;
+  font-weight: 700;
+  margin: 0 auto;
+  color: $primary-white-color;
+  padding: 9px 0 9px 0;
+  transition: color 200ms linear, border-color 200ms linear;
+
+  &:hover,
+  &:focus {
+    color: $secondary-accent-color;
+    border-color: $secondary-accent-color;
+  }
+}

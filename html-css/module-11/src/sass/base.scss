@@ -15,9 +15,9 @@ img {
 }
 
 body {
-  font-family: $main-font-stack;
+  font-family: $primary-font-stack;
   font-weight: 400;
-  font-size: $main-font-size;
-  color: $primeary-color;
-  line-height: 17px;
+  font-size: $primary-font-size;
+  color: $primary-font-color;
+  line-height: $primary-line-height;
 }

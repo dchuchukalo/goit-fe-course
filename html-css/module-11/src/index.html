@@ -15,7 +15,7 @@
     <!-- HEADER -->
     <div class="banner">
         <header class="header container">
-            <nav class="nav header__nav">
+            <nav class="nav">
                 <a href="#" class="link site-logo">
                     <p class="site-logo__name mpres">MoGo</p>
                 </a>
@@ -52,17 +52,18 @@
                 </ul>
             </nav>
             <section class="welcome">
-                <h2 class="welcome__title welcome__title--pos mpres">Creative Template</h2>
-                <p class="welcome__descr welcome__descr--pos mpres">Welcome to MoGo</p>
-                <a class="link learn-more-button welcome__learn-more-button" href="#">Learn more</a>
+                <h2 class="welcome__title mpres">
+                    <span class="welcome__title-preamble">Creative Template</span>
+                    Welcome to MoGo</h2>
+                <a class="link welcome__link" href="#">Learn more</a>
             </section>
         </header>
     </div>
-    <main class="main-content main-content--pos">
+    <main class="main-content main-content">
         <h1 class="main-content__title visuallyhidden">Our agancy</h1>
 
         <!-- SERVICES -->
-        <section class="services services--pos section container">
+        <section class="services section container">
             <h2 class="section__title services__title mpres">
                 <span class="section__title-preamble services__title-preamble">We work with</span>
                 amazing services</h2>
@@ -143,7 +144,7 @@
                                 </a>
                             </li>
                         </ul>
-                        <img srcset="images/Matthew_Dix.jpg 380w, images/Matthew_Dix.jpg@2x.jpg 760w"
+                        <img srcset="images/Matthew_Dix.jpg 380w, images/Matthew_Dix@2x.jpg 760w"
                             src="images/Matthew_Dix.jpg" alt="matthew dix" sizes="380px" height="470">
                     </div>
                     <p class="team__member-name mpres">matthew dix</p>
@@ -183,8 +184,7 @@
                             </li>
                         </ul>
                         <img srcset="images/Christopher_Campbell.jpg 380w, images/Christopher_Campbell@2x.jpg 760w"
-                            src="images/Christopher_Campbell.jpg" alt="christopher campbell" sizes="380px"
-                            height="470">
+                            src="images/Christopher_Campbell.jpg" alt="christopher campbell" sizes="380px" height="470">
                     </div>
                     <p class="team__member-name mpres">christopher campbelln</p>
                     <p class="team__occupation mpres">Branding/UX design</p>
@@ -232,12 +232,12 @@
         </section>
     </main>
     <footer class="page-footer container">
-        <p class="copyright-info mpres">© 2016 MoGo free PSD template by 
+        <p class="copyright-info mpres">© 2016 MoGo free PSD template by
             <a class="copyright-info__link" href="#">Laaqiq</a>
         </p>
         <form action="#" method="get" class="subscribe-form">
-                <input class="email" type="email" id="subscribe" placeholder="Your Email..." name="user_email">
-                <button class="subscribe" type="submit">subscribe</button>
+            <input class="email-place" type="email" id="subscribe" placeholder="Your Email..." name="user_email">
+            <button class="subscribe-btn" type="submit">subscribe</button>
         </form>
     </footer>
 </body>

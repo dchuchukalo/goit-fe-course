@@ -52,17 +52,17 @@ body {
 /* BANNER */
 .banner {
   min-height: 1000px;
+  background-image: -o-linear-gradient(
+      bottom,
+      rgba(252, 227, 138, 0.9) 0%,
+      rgba(243, 129, 129, 0.9) 100%
+    ),
+    url(../img/jpg/banner.jpg);
   background-image: -webkit-gradient(
       linear,
       left bottom, left top,
       from(rgba(252, 227, 138, 0.9)),
       to(rgba(243, 129, 129, 0.9))
-    ),
-    url(../img/jpg/banner.jpg);
-  background-image: -o-linear-gradient(
-      bottom,
-      rgba(252, 227, 138, 0.9) 0%,
-      rgba(243, 129, 129, 0.9) 100%
     ),
     url(../img/jpg/banner.jpg);
   background-image: linear-gradient(
@@ -434,16 +434,16 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
+  background-image: -o-linear-gradient(
+    bottom,
+    rgb(252, 227, 138) 0%,
+    rgb(243, 129, 129) 100%
+  );
   background-image: -webkit-gradient(
     linear,
     left bottom, left top,
     from(rgb(252, 227, 138)),
     to(rgb(243, 129, 129))
-  );
-  background-image: -o-linear-gradient(
-    bottom,
-    rgb(252, 227, 138) 0%,
-    rgb(243, 129, 129) 100%
   );
   background-image: linear-gradient(
     to top,
@@ -609,4 +609,43 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+/* MEDIA */
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .banner {
+    min-height: 1000px;
+    background-image: -webkit-gradient(
+        linear,
+        left bottom, left top,
+        from(rgba(252, 227, 138, 0.9)),
+        to(rgba(243, 129, 129, 0.9))
+      ),
+      url(../img/jpg/banner@2x.jpg);
+    background-image: -o-linear-gradient(
+        bottom,
+        rgba(252, 227, 138, 0.9) 0%,
+        rgba(243, 129, 129, 0.9) 100%
+      ),
+      url(../img/jpg/banner@2x.jpg);
+    background-image: linear-gradient(
+        to top,
+        rgba(252, 227, 138, 0.9) 0%,
+        rgba(243, 129, 129, 0.9) 100%
+      ),
+      url(../img/jpg/banner@2x.jpg);
+  }
+}.example {
+    display: -ms-grid;
+    display: grid;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+    background: -o-linear-gradient(top, white, black);
+    background: linear-gradient(to bottom, white, black);
 }

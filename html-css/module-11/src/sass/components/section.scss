@@ -1,4 +1,5 @@
 .section__title {
+  @extend %mpres;
   position: relative;
   font-weight: 700;
   text-transform: uppercase;

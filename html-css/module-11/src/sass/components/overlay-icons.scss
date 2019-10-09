@@ -1,4 +1,6 @@
 .overlay-icons {
+  @extend %mpres;
+  @extend %list;
   justify-content: space-between;
   width: 223px;
   position: absolute;

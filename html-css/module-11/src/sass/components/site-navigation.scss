@@ -1,4 +1,6 @@
 .site-navigation {
+  @extend %mpres;
+  @extend %list;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -19,6 +21,7 @@
 }
 
 .site-navigation__link {
+  @extend %link;
   text-decoration: none;
   color: $primary-white-color;
   text-transform: uppercase;

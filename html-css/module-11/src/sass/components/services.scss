@@ -11,6 +11,8 @@
 }
 
 .services__list {
+  @extend %mpres;
+  @extend %list;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -65,6 +67,7 @@
 }
 
 .services__descr {
+  @extend %mpres;
   color: $secondary-font-color;
   font-size: $secondary-font-size;
   line-height: $secondary-line-height;

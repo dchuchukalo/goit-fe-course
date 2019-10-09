@@ -417,18 +417,33 @@ body {
 
 /* COMPONENTS */
 
-.link {
+.site-logo,
+.site-navigation__link,
+.welcome__link {
   text-decoration: none;
   display: block;
 }
 
-.list {
+.site-navigation,
+.services__list,
+.team__list,
+.overlay-icons {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
 }
 
-.mpres {
+.site-logo__name,
+.site-navigation,
+.welcome__title,
+.section__title,
+.services__list,
+.services__descr,
+.team__list,
+.team__member-name,
+.team__occupation,
+.overlay-icons,
+.copyright-info {
   margin: 0;
   padding: 0;
 }

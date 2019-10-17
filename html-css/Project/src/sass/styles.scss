@@ -1,4 +1,10 @@
 /*
    Import partials below
 */
+@import './helpers/variables';
+@import './helpers/tools';
+@import './helpers/plaseholders.scss';
 @import './normalize';
+@import './base';
+
+/* COMPONENTS */

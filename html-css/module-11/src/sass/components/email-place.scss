@@ -1,0 +1,14 @@
+.email-place {
+  border: 1px solid $secondary-font-color;
+  min-height: 40px;
+  flex: 0 0 230px;
+  line-height: 24px;
+  padding-left: 17px;
+  border-right: none;
+
+  &::placeholder {
+    font-family: $secondary-font-stack;
+    font-weight: 300;
+    font-style: italic;
+  }
+}

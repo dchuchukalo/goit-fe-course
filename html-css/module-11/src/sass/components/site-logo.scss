@@ -1,0 +1,11 @@
+.site-logo {
+  @extend %link;
+  font-weight: 700;
+  font-size: $accent-font-size;
+  line-height: $accent-line-height;
+  color: $primary-white-color;
+}
+
+.site-logo__name {
+  @extend %mpres;
+}
